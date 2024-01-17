@@ -1,9 +1,6 @@
 const express = require("express");
 const { default: Stripe } = require("stripe");
 const cors = require("cors");
-// const stripe = new Stripe("stripe")(
-//   "sk_test_51NoAhsFAIyhheUEaazNwkvhkrjqAhJTK8CFut5YU1VaQsvzsxPKznZ2yl0aWRUc6csNh7rG0kHGvt9hed0mXolG000s6IGflGg"
-// );
 
 const stripe = new Stripe(process.env.STRIPE_KEY, {});
 
